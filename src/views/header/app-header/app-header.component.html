@@ -1,1 +1,33 @@
+<div class="main-container">
+    <div class="header">
+<div class="title">
+    <img class="logo" src="/chat-logo.png">
+    <span class="title-txt">GupChup</span>
+
+</div>
+    <div class="btn-group">
+    <img class="add-new" src="/add-user.png">
+  <!-- <link rel="icon" type="image/x-icon" href="add-user.png"> -->
+
+    <img class="menu" src="/menu.png">
+    </div>
+    </div>
+
+<div class="sidebar">
+  <div class="search-box">
+    <img class="search-icon" src="/NicePng_search-icon-png_198210.png">
+    <input type="text" placeholder="Search users..." />
+  </div>
+
+  <ul class="user-list">
+    <li *ngFor="let user of users" (click)="selectUser(user)">
+      <img [src]="user.avatar" alt="user" />
+      <div class="user-info">
+        <h4>{{ user.name }}</h4>
+        <p>{{ user.lastMessage }}</p>
+      </div>
+    </li>
+  </ul>
+</div>
+</div>
 

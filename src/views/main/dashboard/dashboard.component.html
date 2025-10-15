@@ -1,1 +1,25 @@
-<app-app-header></app-app-header>
+<div class="chat-container">
+  <!-- Sidebar -->
+  <app-app-header></app-app-header>
+
+  <!-- Chat Section -->
+  <div class="chat-section">
+    <!-- Header -->
+    <header class="chat-header">
+      <div class="chat-user">
+        <span class="messenger">John Doe</span>
+        <span class="status online">Online</span>
+      </div>
+      <div class="chat-actions">
+        <button class="icon-btn"><i class="bi bi-search"></i></button>
+        <button class="icon-btn"><i class="bi bi-three-dots-vertical"></i></button>
+      </div>
+    </header>
+
+    <!-- Messages -->
+    <app-chat-window></app-chat-window>
+
+    <!-- Message Input -->
+    <!-- <app-message-window></app-message-window> -->
+  </div>
+</div>

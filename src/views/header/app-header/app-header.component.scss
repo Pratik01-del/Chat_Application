@@ -1,0 +1,122 @@
+.main-container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    display: flex;
+    gap: 10px;
+    // justify-content: space-between;
+}
+
+.logo{
+   width: 100px;
+    height: 80px;
+    position: absolute;
+    left: 6%;
+    bottom: 91%;
+}
+
+.title-txt{
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.btn-group{
+    display: flex;
+    gap: 10px;
+}
+
+.add-new{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    cursor: pointer;
+}
+
+.menu{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.sidebar {
+//   width: 100%;
+//   background: #fff;
+//   border-right: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+
+  .search-box {
+    // padding: 1rem;
+    // border-bottom: 1px solid #e5e7eb;
+    .search-icon{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+    left: 32%;
+    top: 10.3%;
+    }
+    input {
+      width: 30vw;
+      padding: 0.6rem 0.8rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 0.9rem;
+
+      &:focus {
+        outline: none;
+        border-color: #3b82f6;
+      }
+    }
+  }
+
+  .user-list {
+    flex: 1;
+    overflow-y: auto;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      padding: 0.8rem 1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+
+      &:hover {
+        background: #f9fafb;
+      }
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 0.8rem;
+      }
+
+      .user-info {
+        h4 {
+          margin: 0;
+          font-size: 0.95rem;
+          font-weight: 600;
+        }
+
+        p {
+          margin: 0;
+          color: #666;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}

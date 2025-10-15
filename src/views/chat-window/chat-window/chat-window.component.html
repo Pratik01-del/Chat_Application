@@ -1,0 +1,8 @@
+<div class="chat-window">
+  <div *ngFor="let msg of messages" class="message">
+    <p>{{ msg }}</p>
+    <!-- <span class="time">{{ msg }}</span> -->
+  </div>
+
+  <app-message-window (messageSend)="onMessageReceived($event)"></app-message-window>
+</div>
