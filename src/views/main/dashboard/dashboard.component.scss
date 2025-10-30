@@ -19,6 +19,8 @@
       background: #fafafa;
 
       .chat-user {
+         display: flex;
+         flex-direction: column;
         .messenger{
           margin: 0;
           font-size: 1.1rem;
@@ -36,17 +38,19 @@
       }
 
       .chat-actions {
-        .icon-btn {
-          background: none;
-          border: none;
-          margin-left: 0.5rem;
-          font-size: 1.2rem;
+        display: flex;
+        gap: 10px;
+        
+        .call-normal{
+          width: 40px;
+          height: 40px;
           cursor: pointer;
-          color: #555;
+        }
 
-          &:hover {
-            color: #000;
-          }
+        .video-call{
+            width: 40px;
+          height: 40px;
+          cursor: pointer;
         }
       }
     }
