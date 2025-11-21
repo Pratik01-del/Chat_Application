@@ -35,17 +35,11 @@ $CHAT_APP-theme: mat.define-theme((
 // Comment out the line below if you want to use the deprecated `color` inputs.
 // @include mat.color-variants-backwards-compatibility($CHAT_APP-theme);
 /* You can add global styles to this file, and also import other style files */
-<<<<<<< HEAD
 body{
     background-color: rgba(231, 198, 231, 0.591);
 }
-=======
-<<<<<<< Updated upstream
-=======
 body{
     background-color: rgba(231, 198, 231, 0.591);
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
->>>>>>> Stashed changes
->>>>>>> login-page-ui
