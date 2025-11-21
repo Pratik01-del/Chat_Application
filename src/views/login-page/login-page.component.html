@@ -1,62 +1,25 @@
-<!-- <div class="background-main"> -->
-<div class="navBar">
+<div class="main-div">
     <div class="title">
-        <img class='logo' src="logo.png" alt="logo-app">
+        <span class="title-txt">Login</span>
     </div>
-
-    <div class="menu-list">
-        <ul class="list">
-            <li class="menu">Features</li>
-            <li class="menu">Help Center</li>
-            <li class="menu">Blog</li>
-            <li class="menu">Privacy</li>
-        </ul>
+    <form action="submit">
+    <div class="each-div">
+   <ngx-intl-tel-input
+  [cssClass]="'form-control'"
+  [preferredCountries]="['in']"
+  [enableAutoCountrySelect]="true"
+  [enablePlaceholder]="true"
+  [searchCountryFlag]="true"
+  [searchCountryField]="[ SearchCountryField.All,
+    SearchCountryField.Name,
+    SearchCountryField.DialCode]"
+  [maxLength]="15"
+  >
+</ngx-intl-tel-input>
     </div>
-
-    <div class="log-btn">
-        <button class="primary-btn">Log In</button>
-        <button class="secondary-btn">Sign In</button>
-    </div>
+    <!-- <div class="each-div">
+    <span class="common-txt">Password</span>
+    <input class="form-input" type="text" placeholder="Enter your password">
+    </div> -->
+</form>
 </div>
-
-
-<div class="dashboard">
-    <!-- <img class="image" src="img.jpg" alt="img"> -->
-    <!-- <span class="animated-txt">Welcome to GupChup</span> -->
-</div>
-
-<!-- <div class="new-user">
-    <span class="txt">Are you new here? Please <a href="">register</a></span>
-</div> -->
-
-<div class="cards">
-    <div class="card1">
-        <div class="card1-content">
-        <span class="card-txt">Start chatting with your friends, anywhere, anytime, with GupChup</span>
-        <span class="card1-txt">Great software that allows you to chat from any place at any time without any interruption.</span>
-        <button class="card-btn">
-            Start Chatting Now 
-            <img class="card-icon" src="Icon.png" alt="icon-app">
-        </button>
-
-    </div>
-    <div class="review">
-        <img class="txt-image" src="text.png" alt="text-img">
-    </div>
-    </div>
-    <div class="card2">
-        <img class="card-image" src="person.png" alt="card-img">
-        <img class="card-image2" src="1.png" alt="chat1-img">
-        <img class="card-image3" src="2.png" alt="chat2-img">
-
-    </div>
-</div>
-
-<div class="feature-div">
-    <span>Features for a better experience</span>
-    <div class="feature-content">
-        
-    </div>
-</div>
-
-
