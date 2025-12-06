@@ -1,8 +1,10 @@
 .chat-window {
   // flex: 1;
   // padding: 1rem;
+  height: 100%;
+  max-height: 100vh;
   overflow-y: auto;
-  background: #c9e4ff;
+  background-image: url('/assets/background.jpg');
 
   .message {
     max-width: 70%;

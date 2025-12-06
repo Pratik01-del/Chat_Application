@@ -1,0 +1,109 @@
+::ng-deep{
+    .mat-mdc-dialog-surface{
+        background-color: #5831add2;
+        // background-image: url(/public/background.jpg);
+        padding: 40px;
+    }
+}
+
+.login-div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.title-txt{
+    text-align: center;
+    font-size: 21px;
+    font-weight: 600;
+    color: #fff
+}
+
+.common-text{
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffffc3
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.each-div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+
+.form-input{
+    border: 2px solid #333780;
+    border-radius: 8px;
+    height: 30px;
+}
+
+.custom-dialCode{
+    display: none;
+}
+
+.btn-div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.primary-btn{
+    width: 30%;
+    height: 5vh;
+    color: #3906f0;
+    font-weight: 700;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    box-shadow: 2px 4px 8px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.foot-text{
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffffc3
+}
+
+.otp-container {
+  display: flex;
+  gap: 10px; /* Adjust spacing between boxes */
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.otp-input {
+  width: 40px; /* Adjust size */
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.otp-input:focus {
+  outline: none;
+  border-color: #007bff; /* Highlight on focus */
+}
+
+.title-otp{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff
+}

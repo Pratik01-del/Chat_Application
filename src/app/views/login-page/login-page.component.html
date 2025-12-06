@@ -1,0 +1,65 @@
+<div class="login-div">
+  <div class="image-div">
+    <img style="width: 300px;" src="/assets/login-illustration.png" alt="login-img">
+  </div>
+  @if(!isVerify){
+  <div class="main-div">
+    <div class="title">
+        <span class="title-txt">Enter your mobile number</span>
+        <span class="common-text">We will send you OTP on your mobile number</span>
+    </div>
+    <form>
+    <div class="each-div">
+   <ngx-intl-tel-input
+  [cssClass]="'custom-dialCode'"
+  [preferredCountries]="['in']"
+  [enableAutoCountrySelect]="true"
+  [customPlaceholder]="'Enter Your Number'"
+  [searchCountryFlag]="true"
+  [searchCountryField]="searchFields"
+  [maxLength]="10"
+  >
+</ngx-intl-tel-input>
+    </div>
+    <!-- <div class="each-div">
+    <span class="common-txt">Password</span>
+    <input class="form-input" type="text" placeholder="Enter your password">
+</div> -->
+</form>
+
+<div class="btn-div">
+<button class="primary-btn" (click)="getUser()">SEND OTP</button>
+<div class="footer-div">
+  <span class="foot-text">Don't have an account? <a style='color: #ffffffc9; cursor: pointer;'>Sign up</a></span>
+</div>
+</div>
+
+
+</div>
+  }@else{
+  <div class="otp-div">
+  <div class="title">
+  <span class="title-otp">We have sent you OTP on your mobile number (your number)</span>
+  </div>
+  <div class="otp-container">
+  <input type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="1" class="otp-input" />
+  <input type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="1" class="otp-input" />
+  <input type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="1" class="otp-input" />
+  <input type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="1" class="otp-input" />
+  <!-- Add more inputs for the desired OTP length -->
+</div>
+<div class="btn-div">
+<div class="footer-div">
+  <span class="foot-text">OTP will be auto send in seconds</span>
+</div>
+<button class="primary-btn" (click)="verifyOtp()">VERIFY</button>
+</div>
+</div>
+<!-- <div class="footer-div">
+  <span class="foot-text">Dont have an account? <a href="">Sign up</a></span>
+</div> -->
+}
+</div>
+
+
+
