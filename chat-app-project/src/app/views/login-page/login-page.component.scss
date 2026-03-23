@@ -2,7 +2,7 @@
     .mat-mdc-dialog-surface{
         background-color: #5831add2;
         // background-image: url(/public/background.jpg);
-        padding: 40px;
+        padding: 30px;
     }
 }
 
@@ -12,12 +12,19 @@
     flex-direction: column;
 }
 
-.title{
+.main-div{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
+}
+
+.title{
+    display: flex;
+    // flex-direction: column;
+    // gap: 10px;
     justify-content: center;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
 }
 
 .title-txt{
@@ -37,7 +44,7 @@ form{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
 }
 
 .each-div{
@@ -106,4 +113,27 @@ form{
     font-size: 18px;
     font-weight: 400;
     color: #fff
+}
+
+.inp-div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+
+.submit-btn{
+    width: 70%;
+    height: 5vh;
+    color: #3906f0;
+    font-weight: 700;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    box-shadow: 2px 4px 8px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.input-chat-control{
+    padding: 10px;
+    border: 1px solid #5831add2;
+    border-radius: 5px;
 }

@@ -11,13 +11,14 @@ import { LoginPageComponent } from '../login-page/login-page.component';
 })
 export class LandingPageComponent {
 constructor(private dialog: MatDialog){}
-  login(){
+  login(type: string){
     const dialogRef = this.dialog.open(LoginPageComponent, {
-        // width: '500px',
-        // height: '500px',
-        // background-color: #6a6dea
+        data: type
         
       // disableClose: true
     });
   }
+
+  
+
 }

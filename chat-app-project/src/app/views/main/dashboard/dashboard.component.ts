@@ -12,4 +12,6 @@ import { ChatWindowComponent } from '../../chat-window/chat-window/chat-window.c
 })
 export class DashboardComponent {
 
+
+  user = localStorage.getItem('user')
 }

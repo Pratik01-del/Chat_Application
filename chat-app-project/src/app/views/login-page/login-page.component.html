@@ -2,15 +2,15 @@
   <div class="image-div">
     <img style="width: 300px;" src="/assets/login-illustration.png" alt="login-img">
   </div>
-  @if(!isVerify){
+  @if(dialogData === 'login'){
   <div class="main-div">
     <div class="title">
-        <span class="title-txt">Enter your mobile number</span>
-        <span class="common-text">We will send you OTP on your mobile number</span>
+        <span class="title-txt">Sign In</span>
+        <!-- <span class="common-text">We will send you OTP on your mobile number</span> -->
     </div>
     <form>
     <div class="each-div">
-   <ngx-intl-tel-input
+   <!-- <ngx-intl-tel-input
   [cssClass]="'custom-dialCode'"
   [preferredCountries]="['in']"
   [enableAutoCountrySelect]="true"
@@ -19,7 +19,13 @@
   [searchCountryField]="searchFields"
   [maxLength]="10"
   >
-</ngx-intl-tel-input>
+</ngx-intl-tel-input> -->
+<span class="common-text">Email*</span>
+  <input type="text" placeholder="Enter your email" class="input-chat-control">
+    </div>
+    <div class="each-div">
+      <span class="common-text">Password*</span>
+  <input type="password" placeholder="Enter your password" class="input-chat-control">
     </div>
     <!-- <div class="each-div">
     <span class="common-txt">Password</span>
@@ -28,15 +34,21 @@
 </form>
 
 <div class="btn-div">
-<button class="primary-btn" (click)="getUser()">SEND OTP</button>
+<button class="primary-btn" (click)="login()">Login</button>
 <div class="footer-div">
+  @if(dialogData === 'login'){
   <span class="foot-text">Don't have an account? <a style='color: #ffffffc9; cursor: pointer;'>Sign up</a></span>
-</div>
-</div>
-
-
-</div>
   }@else{
+    <span class="foot-text">Already have an account? <a style='color: #ffffffc9; cursor: pointer;'>Sign In</a></span>
+  }
+</div>
+</div>
+
+
+</div>
+  }
+  <!-- @else{
+    @if(!isNewUser){
   <div class="otp-div">
   <div class="title">
   <span class="title-otp">We have sent you OTP on your mobile number (your number)</span>
@@ -45,19 +57,55 @@
   <input type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="1" class="otp-input" />
   <input type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="1" class="otp-input" />
   <input type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="1" class="otp-input" />
-  <input type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="1" class="otp-input" />
+  <input type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="1" class="otp-input" /> -->
   <!-- Add more inputs for the desired OTP length -->
-</div>
+<!-- </div>
+@if(dialogData === 'login'){
 <div class="btn-div">
 <div class="footer-div">
   <span class="foot-text">OTP will be auto send in seconds</span>
 </div>
-<button class="primary-btn" (click)="verifyOtp()">VERIFY</button>
+<button class="primary-btn" (click)="verifyOtp('old')">VERIFY</button>
 </div>
+}@else{
+  <div class="btn-div">
+<div class="footer-div">
+  <span class="foot-text">OTP will be auto send in seconds</span>
 </div>
+<button class="primary-btn" (click)="verifyOtp('new')">VERIFY</button>
+</div>
+}
+</div>
+    } -->
 <!-- <div class="footer-div">
   <span class="foot-text">Dont have an account? <a href="">Sign up</a></span>
 </div> -->
+<!-- } -->
+@if(dialogData === 'register'){
+ <div class="main-div">
+  <div class="title">
+  <span class="title-txt">Set up your profile</span>
+  </div>
+  <form>
+    <div class="each-div">
+  <span class='common-text'>Email*</span>
+  <input type="text" placeholder="Enter your email" class="input-chat-control" [formControl]="username"/>
+    </div>
+    <div class="each-div">
+  <span class='common-text'>Password*</span>
+  <input type="text" placeholder="Enter your password" class="input-chat-control" [formControl]="password"/>
+    </div>
+     <div class="each-div">
+  <span class='common-text'>Confirm Password*</span>
+  <input type="text" placeholder="confirm your password" class="input-chat-control" [formControl]="confirmPwd"/>
+    </div>
+  
+  <!-- Add more inputs for the desired OTP length -->
+  </form>
+<div class="btn-div">
+<button class="submit-btn" (click)="register()">Get Started</button>
+</div>
+</div>
 }
 </div>
 

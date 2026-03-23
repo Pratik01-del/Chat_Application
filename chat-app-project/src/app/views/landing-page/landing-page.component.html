@@ -14,8 +14,8 @@
     </div>
 
     <div class="log-btn">
-        <button class="primary-btn" (click)="login()">Login</button>
-        <button class="secondary-btn">Get Started Now</button>
+        <button class="primary-btn" (click)="login('login')">Login</button>
+        <button class="secondary-btn"(click)="login('register')">Get Started Now</button>
     </div>
 </div>
 
@@ -24,7 +24,7 @@
         <div class="card1-content">
         <span class="card-txt">Start chatting with your friends, anywhere, anytime, with GupChup</span>
         <span class="card1-txt">Great software that allows you to chat from any place at any time without any interruption.</span>
-        <button class="card-btn">
+        <button class="card-btn" (click)="login('register')">
             Start Chatting Now 
             <img class="card-icon" src="/assets/Icon.png" alt="icon-app">
         </button>
@@ -82,7 +82,7 @@
 <div class="promo-content">
     <span class="promo-title">Start messaging directly to your friends, clients just by installing GupChup</span>
     <span class="promo-txt">There are many variations of passages available, but the majority have suffered all injected humour or randomised words which don't look slightly believable.</span>
-    <button class="card-btn">Star Chatting Now</button>
+    <button class="card-btn" (click)="login('register')">Star Chatting Now</button>
 </div>
 <div class="promo-images">
     <img src="/assets/Card.png" alt="promo-img">
@@ -103,7 +103,7 @@
      <div class="footer-title">Start with GupChup, become</div>
     <div class="footer-title"> faster every second</div>
     </div>
-    <button class="card-btn">Start Chatting Now</button>
+    <button class="card-btn" (click)="login('register')">Start Chatting Now</button>
 </div>
 
 <div class="footer-bar">
